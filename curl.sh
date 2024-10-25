@@ -7,7 +7,7 @@ while true; do
 
   # Verifica se l'errore è dovuto al codice di errore 6 (Could not resolve host)
   if [[ $? -eq 6 ]]; then
-    echo "Errore: Could not resolve host" >&2
+    echo "$(date) Errore: Could not resolve host" >&2
   fi
 
   # Attende 5 secondi prima di ripetere il ciclo
